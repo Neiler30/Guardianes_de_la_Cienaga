@@ -1,5 +1,8 @@
 # Guardianes de la Ciénaga
 
+<img width="1672" height="941" alt="ChatGPT Image 3 jun 2026, 02_20_35 p m" src="https://github.com/user-attachments/assets/ca792dc1-c53e-4385-9a12-d25a8254d9f0" />
+
+
 ## Descripción General
 
 Guardianes de la Ciénaga es un videojuego de exploración y restauración ambiental inspirado en la Ciénaga Grande de Santa Marta.
@@ -47,6 +50,9 @@ La cámara será en primera persona mostrando únicamente las manos del jugador.
 ---
 
 # Bucle de Juego
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/c25e62b0-ba3d-4344-a86e-bb4b28eda2de" />
+
 
 Explorar → Recoger residuos → Llenar la canoa → Transportar residuos → Entregar en punto de acopio → Obtener EcoPuntos → Mejorar herramientas → Restaurar nuevas zonas.
 
