@@ -1,0 +1,1761 @@
+# Guardianes de la Ciénaga - Proyecto Unity
+
+> **"Cuando el agua muere, todo muere con ella."**
+
+Documento maestro del proyecto **Guardianes de la Ciénaga** para su desarrollo oficial en **Unity 3D con C#**.
+
+Este archivo reúne en un solo lugar el lore, la visión del juego, el diseño principal, las mecánicas, la arquitectura técnica, el plan de desarrollo y las tareas iniciales para trabajar con Unity y Codex.
+
+---
+
+## 1. Estado actual del proyecto
+
+El proyecto **Guardianes de la Ciénaga** se desarrollará oficialmente en **Unity 3D**.
+
+La etapa anterior basada en navegador, TypeScript, Three.js y Vite queda cancelada como ruta principal de desarrollo.
+
+Esa etapa puede conservarse únicamente como referencia histórica o conceptual, pero **no debe continuarse** ni usarse como base técnica del juego final.
+
+### Decisión técnica oficial
+
+- Motor: **Unity 3D**
+- Lenguaje: **C#**
+- Vista inicial: **Primera persona**
+- Inspiración de movimiento: **Minecraft**
+- Plataforma inicial: **PC**
+- Futuras plataformas posibles: WebGL, Android, consolas o versiones educativas
+- Desarrollo base: prototipo jugable pequeño antes de expandir el mapa completo
+
+### Advertencia para Codex o cualquier asistente de IA
+
+No usar:
+
+- TypeScript
+- Three.js
+- Vite
+- Navegador como motor principal
+- Arquitectura web como base del juego
+
+El proyecto debe construirse directamente en Unity.
+
+---
+
+## 2. Título
+
+# Guardianes de la Ciénaga
+
+**Frase principal:**
+
+> Cuando el agua muere, todo muere con ella.
+
+---
+
+## 3. Concepto general
+
+**Guardianes de la Ciénaga** es un videojuego 3D de exploración, restauración ambiental y educación ecológica inspirado en la **Ciénaga Grande de Santa Marta**.
+
+El jugador regresa al pueblo donde creció después de enterarse de que la Ciénaga Grande está cerca de un colapso ecológico. Allí se reencuentra con su abuelo Kiko, uno de los últimos pescadores tradicionales, quien le recuerda que no se puede esperar siempre a que otros salven el territorio.
+
+El objetivo del juego no es solamente recoger basura.
+
+El verdadero objetivo es:
+
+- Limpiar
+- Investigar
+- Restaurar
+- Sembrar
+- Rescatar
+- Monitorear
+- Educar
+- Proteger
+
+Hasta lograr que la Ciénaga vuelva a convertirse en un ecosistema saludable.
+
+---
+
+## 4. Lore completo
+
+La Ciénaga Grande fue durante generaciones uno de los ecosistemas más importantes del país.
+
+Miles de familias vivían de la pesca.
+
+Las aves migraban todos los años.
+
+Los manglares protegían las costas.
+
+El agua era cristalina.
+
+Pero con el paso del tiempo todo comenzó a cambiar.
+
+La contaminación aumentó.
+
+Los plásticos llegaron por toneladas.
+
+Los peces comenzaron a desaparecer.
+
+Los manglares murieron.
+
+Las empresas explotaron recursos sin control.
+
+Los turistas dejaron basura.
+
+Las especies comenzaron a extinguirse.
+
+Lo que alguna vez fue un paraíso terminó convertido en un ecosistema enfermo.
+
+Mientras estudiabas Ecología en otra ciudad viste una noticia:
+
+> "La Ciénaga Grande podría colapsar ecológicamente."
+
+Esa noticia cambia tu vida.
+
+Decides regresar al pueblo donde creciste.
+
+Allí vive tu abuelo Kiko, uno de los últimos pescadores tradicionales.
+
+Él nunca perdió la esperanza.
+
+Al llegar en el bus observas desde la ventana la enorme cantidad de basura flotando.
+
+Las aves son pocas.
+
+El agua es oscura.
+
+Los manglares están secos.
+
+Los pescadores tienen sus redes vacías.
+
+El silencio es extraño.
+
+Llegas a la casa de Kiko.
+
+Él te recibe con alegría.
+
+Después de una conversación llena de nostalgia te dice:
+
+> "Si esperamos que otros la salven, ya será demasiado tarde."
+
+Y ahí comienza tu aventura.
+
+---
+
+## 5. Personaje principal
+
+El jugador interpreta a una persona joven que creció cerca de la Ciénaga Grande y luego se fue a estudiar Ecología en otra ciudad.
+
+Al enterarse del posible colapso del ecosistema, decide regresar a su pueblo para ayudar.
+
+### Rasgos del protagonista
+
+- Conoce el territorio, pero se fue durante años.
+- Tiene formación ecológica.
+- Tiene vínculo emocional con la Ciénaga.
+- Aprende de la ciencia, pero también del conocimiento tradicional.
+- No llega como salvador absoluto, sino como alguien que debe trabajar con la comunidad.
+- Su misión es unir conocimiento, esfuerzo y restauración.
+
+---
+
+## 6. Abuelo Kiko
+
+Kiko es uno de los personajes centrales del juego.
+
+Es un pescador tradicional, mayor, sabio y muy conectado con la Ciénaga.
+
+### Función narrativa
+
+Kiko representa:
+
+- La memoria del territorio.
+- La pesca tradicional.
+- La esperanza.
+- La conexión emocional con el ecosistema.
+- La voz de quienes vieron la Ciénaga viva.
+
+### Función jugable
+
+Kiko puede servir como:
+
+- Primer NPC guía.
+- Encargado del tutorial.
+- Personaje que explica la historia del lugar.
+- Fuente de misiones iniciales.
+- Voz emocional del juego.
+
+### Frase clave
+
+> "Si esperamos que otros la salven, ya será demasiado tarde."
+
+---
+
+## 7. Objetivo del juego
+
+El objetivo principal no es simplemente limpiar basura.
+
+El objetivo real es recuperar todo el ecosistema.
+
+Eso implica:
+
+- Limpiar zonas contaminadas.
+- Recoger residuos.
+- Clasificar basura.
+- Reciclar materiales.
+- Fabricar herramientas.
+- Restaurar manglares.
+- Rescatar animales.
+- Investigar problemas ambientales.
+- Mejorar la calidad del agua.
+- Aumentar la biodiversidad.
+- Educar a la comunidad.
+- Proteger las zonas restauradas.
+- Hacer que la Ciénaga vuelva a la vida.
+
+---
+
+## 8. Filosofía del juego
+
+El jugador nunca recibe dinero mágico.
+
+Nunca aparecen recursos infinitos.
+
+Todo se consigue trabajando.
+
+El progreso representa años de restauración ambiental.
+
+La satisfacción del jugador no viene únicamente de completar misiones, sino de mirar atrás y darse cuenta de que un lugar que estaba muriendo ahora vuelve a estar lleno de vida.
+
+### Principios centrales
+
+1. **Restaurar toma esfuerzo.**
+2. **Cada acción debe tener impacto visible.**
+3. **La educación ambiental debe sentirse natural, no como una clase obligatoria.**
+4. **La comunidad importa tanto como el ecosistema.**
+5. **La Ciénaga es el verdadero protagonista.**
+6. **El progreso no se mide solo en puntos, sino en vida que regresa.**
+
+---
+
+## 9. Inspiraciones
+
+El proyecto toma inspiración de distintos juegos, pero busca una identidad propia.
+
+### Minecraft
+
+Inspiración en:
+
+- Movimiento simple.
+- Primera persona.
+- Interacción intuitiva.
+- Exploración libre.
+- Inventario y barra rápida.
+
+### Firewatch
+
+Inspiración en:
+
+- Narrativa ambiental.
+- Atmósfera.
+- Sensación de soledad y contemplación.
+- Diálogos con peso emocional.
+
+### Subnautica
+
+Inspiración en:
+
+- Descubrimiento del entorno.
+- Sensación de inmersión.
+- Ecosistemas vivos.
+- Exploración progresiva.
+
+### PowerWash Simulator
+
+Inspiración en:
+
+- Satisfacción inmediata al limpiar.
+- Transformación visual evidente.
+- Progreso relajante y gratificante.
+
+### Restore Your Island
+
+Inspiración en:
+
+- Limpiar basura.
+- Restaurar zonas.
+- Ver cómo un lugar destruido vuelve a la vida.
+- Progresión por mejora de herramientas y desbloqueo de áreas.
+
+### Diferencia principal
+
+**Guardianes de la Ciénaga no es una copia de ningún juego.**
+
+Su identidad propia está en:
+
+- La Ciénaga Grande de Santa Marta.
+- Los manglares.
+- La canoa.
+- La pesca tradicional.
+- La fauna local.
+- La educación ambiental.
+- La restauración de un humedal real.
+- La relación entre comunidad y ecosistema.
+
+---
+
+## 10. Bucle principal de gameplay
+
+El ciclo completo del juego es:
+
+```text
+Explorar
+↓
+Encontrar problemas
+↓
+Recoger basura
+↓
+Clasificar residuos
+↓
+Llevarlos al centro de reciclaje
+↓
+Obtener materiales
+↓
+Fabricar herramientas
+↓
+Desbloquear nuevas zonas
+↓
+Sembrar vegetación
+↓
+Recuperar fauna
+↓
+Mejorar la calidad del agua
+↓
+Aumentar la biodiversidad
+↓
+La Ciénaga vuelve a la vida
+```
+
+---
+
+## 11. Bucle jugable minuto a minuto
+
+El jugador realiza acciones simples y repetibles:
+
+1. Caminar o navegar en canoa.
+2. Observar el entorno.
+3. Detectar basura, animales en peligro o zonas contaminadas.
+4. Mirar un objeto.
+5. Presionar **E** para interactuar.
+6. Recoger residuos.
+7. Guardar residuos en inventario o mochila.
+8. Llevarlos a un punto de acopio.
+9. Clasificar los residuos.
+10. Recibir materiales reciclados.
+11. Usar materiales para mejorar herramientas.
+12. Restaurar zonas.
+13. Ver cambios visuales en el mundo.
+
+---
+
+## 12. Mapa del juego
+
+El mapa está inspirado en la Ciénaga Grande.
+
+Debe incluir, de manera progresiva:
+
+- Caños
+- Islas
+- Manglares
+- Playas
+- Pueblos
+- Ciénagas interiores
+- Bosques inundables
+- Muelle
+- Zonas de pesca
+- Zonas contaminadas
+- Zonas restauradas
+- Senderos ecológicos
+- Áreas de fauna
+- Centros de investigación
+- Puntos de acopio
+
+### Primera etapa
+
+No se debe intentar construir todo el mapa desde el inicio.
+
+La primera versión debe tener una zona pequeña llamada:
+
+# El caño de Kiko
+
+---
+
+## 13. Primer prototipo: El caño de Kiko
+
+El primer prototipo jugable debe demostrar el corazón del juego en una zona pequeña.
+
+### Escena inicial
+
+Debe incluir:
+
+- Casa sencilla de Kiko.
+- Muelle.
+- Canoa.
+- Caño contaminado.
+- Basura flotante.
+- Basura en la orilla.
+- Manglares secos.
+- Agua oscura.
+- Pocas aves o ausencia de fauna.
+- Punto de acopio.
+- Zona restaurable.
+
+### Objetivo del prototipo
+
+El jugador debe poder:
+
+1. Hablar con Kiko.
+2. Recibir una misión inicial.
+3. Caminar en primera persona.
+4. Interactuar con objetos usando **E**.
+5. Subir a la canoa.
+6. Navegar por el caño.
+7. Recoger basura.
+8. Llevar basura al punto de acopio.
+9. Clasificar residuos.
+10. Obtener materiales o EcoPuntos.
+11. Reducir la contaminación.
+12. Ver una transformación visual de la zona.
+
+### Transformación mínima esperada
+
+Antes de limpiar:
+
+- Agua oscura.
+- Basura visible.
+- Manglares secos.
+- Sonidos tristes o vacíos.
+- Pocas aves.
+- Sensación de abandono.
+
+Después de limpiar:
+
+- Agua un poco más clara.
+- Menos basura.
+- Algo de vegetación nueva.
+- Regreso de algunos peces o aves.
+- Sonidos más vivos.
+- Indicador de salud ambiental mejorado.
+
+---
+
+## 14. Movimiento del jugador
+
+El movimiento debe estar inspirado en Minecraft.
+
+### Controles base
+
+- **W**: avanzar
+- **A**: moverse a la izquierda
+- **S**: retroceder
+- **D**: moverse a la derecha
+- **Mouse**: mirar alrededor
+- **Espacio**: saltar
+- **Shift**: correr
+- **Ctrl**: agacharse
+- **E**: interactuar
+- **Tab** o **I**: abrir inventario
+
+### Vista
+
+- Primera persona.
+- Cámara libre.
+- Movimiento simple y fluido.
+- Sin animaciones complejas en la primera etapa.
+
+---
+
+## 15. Sistema de interacción
+
+La interacción funciona mirando objetos.
+
+El jugador mira un objeto interactuable.
+
+Si está a distancia válida, aparece un punto blanco o indicador.
+
+Entonces puede presionar **E**.
+
+### Ejemplos de interacción
+
+- **E** para recoger basura.
+- **E** para hablar.
+- **E** para abrir.
+- **E** para sembrar.
+- **E** para subir a la canoa.
+- **E** para bajar de la canoa.
+- **E** para dormir.
+- **E** para usar punto de acopio.
+- **E** para examinar animales o plantas.
+
+### Requisito técnico
+
+Todos los objetos interactuables deben usar una interfaz común.
+
+Ejemplo conceptual:
+
+```csharp
+public interface IInteractable
+{
+    string GetInteractionText();
+    void Interact(PlayerInteractor interactor);
+}
+```
+
+---
+
+## 16. Sistema de basura
+
+Existen muchos tipos de residuos.
+
+Cada residuo debe tener:
+
+- Nombre
+- Tipo
+- Peso
+- Volumen
+- Material reciclable
+- Dificultad de recolección
+- Herramienta requerida
+- Impacto ambiental
+
+### Tipos iniciales
+
+- Plástico
+- Vidrio
+- Metal
+- Llantas
+- Redes de pesca
+- Electrodomésticos
+- Aceites
+- Basura orgánica
+
+### Primera versión
+
+Para el primer prototipo se pueden usar solo:
+
+- Botella plástica
+- Bolsa plástica
+- Lata metálica
+- Red de pesca pequeña
+
+Después se expanden más tipos.
+
+---
+
+## 17. Inventario
+
+El inventario debe inspirarse en Minecraft, pero más sencillo al principio.
+
+### Elementos del inventario
+
+- Barra rápida
+- Mochila
+- Espacio limitado
+- Peso máximo
+- Tipos de residuos
+- Herramientas
+
+### Primera versión
+
+El inventario inicial puede tener:
+
+- Capacidad máxima por peso.
+- Lista simple de objetos recogidos.
+- Contador visual.
+- No necesita sistema avanzado de celdas todavía.
+
+### Futuro
+
+Más adelante se puede agregar:
+
+- Inventario por slots.
+- Barra rápida visual.
+- Arrastrar y soltar.
+- Mochilas mejorables.
+- Clasificación automática.
+- Herramientas equipables.
+
+---
+
+## 18. Sistema de canoa
+
+La canoa es una mecánica central del juego.
+
+El jugador puede recorrer la Ciénaga caminando y navegando.
+
+### Subir a la canoa
+
+Cuando el jugador llega al muelle o mira la canoa:
+
+- Aparece mensaje: **Presiona E para subir a la canoa**
+- Al presionar E:
+  - Se desactiva el movimiento a pie.
+  - Se activa el control de canoa.
+  - La cámara sigue libre.
+  - El jugador puede mirar alrededor.
+
+### Controles de canoa
+
+- **W**: avanzar
+- **S**: retroceder
+- **A**: girar a la izquierda
+- **D**: girar a la derecha
+- **Mouse**: mirar libremente
+- **E**: bajar de la canoa cuando está cerca de un punto válido
+
+### Reglas
+
+- La cámara nunca debe quedar fija.
+- La canoa debe sentirse simple al inicio.
+- No se necesita física realista compleja en la primera versión.
+- La canoa debe ser el principal medio de exploración acuática.
+
+---
+
+## 19. Sistema de herramientas
+
+El jugador inicia únicamente con:
+
+- Guantes
+
+Luego desbloquea:
+
+- Pinzas
+- Bolsas
+- Pala
+- Red
+- Detector ambiental
+- Medidor de pH
+- Dron
+- Kit de reforestación
+
+### Función de las herramientas
+
+Cada herramienta permite nuevas tareas.
+
+| Herramienta | Uso |
+|---|---|
+| Guantes | Recoger basura básica |
+| Pinzas | Recoger basura peligrosa o difícil |
+| Bolsas | Aumentar capacidad de recolección |
+| Pala | Limpiar tierra, sembrar, retirar lodo |
+| Red | Recoger basura flotante o rescatar animales |
+| Detector ambiental | Identificar zonas contaminadas |
+| Medidor de pH | Tomar muestras de agua |
+| Dron | Explorar zonas inaccesibles |
+| Kit de reforestación | Sembrar manglares y vegetación |
+
+---
+
+## 20. Salud del Ecosistema
+
+No existe barra de vida tradicional.
+
+La barra principal del juego es:
+
+# Salud del Ecosistema
+
+Esta representa el estado de la zona y del mapa.
+
+### Indicadores
+
+- Calidad del agua
+- Cantidad de basura
+- Fauna
+- Flora
+- Manglares
+- Oxígeno
+- Biodiversidad
+- Contaminación
+
+### Funcionamiento
+
+Cada zona tiene su propio estado ambiental.
+
+Ejemplo:
+
+```text
+Zona: Caño de Kiko
+
+Calidad del agua: 15%
+Basura: 90%
+Fauna: 5%
+Flora: 20%
+Manglares: 10%
+Oxígeno: 25%
+Biodiversidad: 8%
+Contaminación: 85%
+
+Salud total del ecosistema: 18%
+```
+
+Al limpiar basura, sembrar manglares y rescatar fauna, la salud sube.
+
+---
+
+## 21. Transformación visual del mundo
+
+Este es el corazón del juego.
+
+Al principio:
+
+- Agua oscura
+- Pocas aves
+- Basura
+- Árboles secos
+- Pocos peces
+- Silencio
+- Manglares muertos
+- Sensación de abandono
+
+Después de limpiar:
+
+- Agua más clara
+- Regresan los peces
+- Aparecen mariposas
+- Más aves
+- Nacen manglares
+- Más vegetación
+- Sonidos naturales
+- Más vida
+- El mundo se siente recuperado
+
+### Implementación inicial
+
+En la primera versión, la transformación puede hacerse con:
+
+- Activar/desactivar basura.
+- Cambiar material/color del agua.
+- Activar vegetación nueva.
+- Activar partículas sencillas.
+- Activar sonidos de aves.
+- Activar peces o aves simples.
+- Cambiar iluminación o ambiente.
+
+---
+
+## 22. Animales
+
+Los animales reaccionan al estado ambiental.
+
+Si el agua mejora, vuelven.
+
+Si la contaminación aumenta, desaparecen.
+
+### Animales posibles
+
+- Peces
+- Aves migratorias
+- Garzas
+- Cangrejos
+- Tortugas
+- Mariposas
+- Iguanas
+- Pequeños mamíferos
+- Especies locales del ecosistema
+
+### Primera versión
+
+Para el primer prototipo se pueden usar:
+
+- Peces simples
+- Aves lejanas
+- Una tortuga atrapada como misión futura
+
+---
+
+## 23. NPC
+
+Cada personaje tiene una historia.
+
+### Tipos de NPC
+
+- Pescadores
+- Biólogos
+- Niños
+- Turistas
+- Campesinos
+- Guardaparques
+- Habitantes del pueblo
+- Personas que ayudan
+- Personas que contaminan
+- Personas que enseñan
+
+### Función de los NPC
+
+- Dar misiones.
+- Contar historias.
+- Enseñar datos ambientales.
+- Mostrar el impacto social de la contaminación.
+- Cambiar su actitud según el progreso del jugador.
+- Ayudar cuando aumenta la confianza comunitaria.
+
+---
+
+## 24. Sistema de misiones
+
+Las misiones no deben ser genéricas.
+
+Cada misión debe tener contexto.
+
+### Ejemplos
+
+- Rescatar una tortuga atrapada.
+- Limpiar un caño bloqueado.
+- Reforestar un manglar.
+- Retirar una red fantasma.
+- Llevar muestras de agua.
+- Investigar mortandad de peces.
+- Enseñar a niños del pueblo.
+- Ayudar a un pescador con redes limpias.
+- Restaurar una zona de anidación.
+- Construir un pequeño vivero.
+
+### Estructura recomendada de misión
+
+Cada misión debe tener:
+
+- Nombre
+- NPC o fuente
+- Contexto narrativo
+- Objetivo jugable
+- Recompensa
+- Impacto ambiental
+- Mensaje educativo breve
+
+Ejemplo:
+
+```text
+Misión: El caño bloqueado
+
+Kiko recuerda que antes ese caño era paso de peces pequeños.
+Ahora está lleno de botellas, bolsas y redes.
+
+Objetivo:
+- Recoger 15 residuos flotantes.
+- Retirar 1 red de pesca.
+- Llevar todo al punto de acopio.
+
+Impacto:
+- Baja la contaminación.
+- Mejora la calidad del agua.
+- Aparecen peces pequeños.
+
+Mensaje:
+Los caños permiten que el agua circule y que muchas especies se reproduzcan.
+Cuando se bloquean, el ecosistema se enferma.
+```
+
+---
+
+## 25. Progresión
+
+No existen niveles tradicionales.
+
+La progresión ocurre por:
+
+- Conocimiento
+- Herramientas
+- Restauración
+- Confianza de los habitantes
+- Estado del ecosistema
+- Nuevas zonas desbloqueadas
+- Nuevas especies observadas
+- Nuevas construcciones comunitarias
+
+### Ejemplo de progresión
+
+```text
+Inicio:
+Guantes + mochila pequeña + zona limitada.
+
+Después:
+Pinzas + bolsas + acceso a caño cercano.
+
+Más adelante:
+Pala + vivero + siembra de manglar.
+
+Luego:
+Red + rescate de fauna + zonas acuáticas más profundas.
+
+Avanzado:
+Medidor de pH + laboratorio + investigación ambiental.
+
+Final:
+Dron + monitoreo completo + restauración de grandes zonas.
+```
+
+---
+
+## 26. Ciclo día/noche
+
+El juego tendrá ciclo de día y noche.
+
+### Momentos
+
+- Mañana
+- Tarde
+- Atardecer
+- Noche
+
+### Cambios posibles
+
+- Fauna diferente.
+- Sonidos diferentes.
+- Iluminación diferente.
+- NPC con rutinas diferentes.
+- Visibilidad modificada.
+- Misiones que solo ocurren en ciertos momentos.
+
+### Primera versión
+
+No es obligatorio implementar ciclo completo al inicio.
+
+Para el primer prototipo se puede usar un tiempo fijo de día o atardecer.
+
+---
+
+## 27. Clima
+
+El clima puede modificar el gameplay.
+
+### Tipos de clima
+
+- Soleado
+- Lluvia
+- Neblina
+- Tormenta
+
+### Efectos
+
+- Navegación más difícil.
+- Menor visibilidad.
+- Animales cambian comportamiento.
+- Nivel del agua puede subir.
+- Basura puede desplazarse.
+- Algunas misiones cambian.
+
+### Primera versión
+
+No implementar clima avanzado todavía.
+
+Se puede dejar preparado para futuras fases.
+
+---
+
+## 28. Economía del juego
+
+El juego no usa dinero mágico.
+
+La basura reciclable genera materiales.
+
+Los materiales sirven para:
+
+- Mejorar herramientas.
+- Construir estaciones.
+- Fabricar equipos.
+- Restaurar zonas.
+- Crear infraestructura comunitaria.
+
+### Recursos posibles
+
+- Plástico reciclado
+- Metal reciclado
+- Vidrio reciclado
+- Fibra
+- Madera recuperada
+- Compuestos orgánicos
+- Datos científicos
+- Confianza comunitaria
+
+### Ejemplo
+
+```text
+10 plásticos → material reciclado
+5 metales → pieza para herramienta
+3 muestras de agua → informe ambiental
+Confianza alta → pescadores ayudan
+Salud del ecosistema 60% → vuelve una especie
+```
+
+---
+
+## 29. Construcciones futuras
+
+Más adelante el jugador puede construir o mejorar:
+
+- Centro de reciclaje
+- Vivero
+- Laboratorio
+- Muelle
+- Miradores
+- Senderos ecológicos
+- Centro de visitantes
+- Estaciones de monitoreo
+- Zonas de educación ambiental
+
+### Regla
+
+Las construcciones deben sentirse como infraestructura para restaurar y proteger, no como decoración sin sentido.
+
+---
+
+## 30. Educación ambiental
+
+Cada especie puede tener información real.
+
+Cada planta puede tener información real.
+
+Cada pez puede tener información real.
+
+Cada misión enseña algo sin sentirse como una clase.
+
+### Regla de diseño
+
+Los mensajes educativos deben ser:
+
+- Cortos.
+- Claros.
+- Integrados al gameplay.
+- Relacionados con lo que el jugador acaba de hacer.
+
+Ejemplo:
+
+```text
+El plástico puede atrapar aves, peces y cangrejos.
+Separarlo evita que llegue al agua y ayuda a recuperar el ecosistema.
+```
+
+Otro ejemplo:
+
+```text
+Los manglares protegen las costas, sirven como criadero de peces y ayudan a mantener la calidad del agua.
+```
+
+---
+
+## 31. Arquitectura inicial para Unity
+
+La arquitectura debe ser modular, clara y fácil de expandir.
+
+### Carpeta recomendada
+
+```text
+Assets/
+├── _Project/
+│   ├── Art/
+│   │   ├── Materials/
+│   │   ├── Models/
+│   │   ├── Textures/
+│   │   └── VFX/
+│   ├── Audio/
+│   │   ├── Music/
+│   │   └── SFX/
+│   ├── Prefabs/
+│   │   ├── Player/
+│   │   ├── Boat/
+│   │   ├── Waste/
+│   │   ├── NPC/
+│   │   ├── UI/
+│   │   └── Environment/
+│   ├── Scenes/
+│   │   ├── Prototype_01_CanoDeKiko.unity
+│   │   └── TestScenes/
+│   ├── Scripts/
+│   │   ├── Player/
+│   │   ├── Interaction/
+│   │   ├── Boat/
+│   │   ├── Inventory/
+│   │   ├── Waste/
+│   │   ├── Recycling/
+│   │   ├── Ecosystem/
+│   │   ├── Missions/
+│   │   ├── NPC/
+│   │   ├── UI/
+│   │   ├── Tools/
+│   │   └── Core/
+│   ├── ScriptableObjects/
+│   │   ├── WasteTypes/
+│   │   ├── Tools/
+│   │   ├── Missions/
+│   │   └── Ecosystem/
+│   └── Settings/
+```
+
+---
+
+## 32. Sistemas principales
+
+### PlayerController
+
+Controla:
+
+- Movimiento en primera persona.
+- Salto.
+- Correr.
+- Agacharse.
+- Cámara.
+- Estado a pie.
+
+### PlayerInteractor
+
+Controla:
+
+- Raycast desde la cámara.
+- Detección de objetos interactuables.
+- Mostrar texto de interacción.
+- Ejecutar interacción con **E**.
+
+### IInteractable
+
+Interfaz común para objetos interactivos.
+
+La deben implementar:
+
+- Basura
+- NPC
+- Canoa
+- Punto de acopio
+- Herramientas
+- Plantas
+- Puertas
+- Estaciones
+
+### BoatController
+
+Controla:
+
+- Movimiento de canoa.
+- Giro.
+- Subir y bajar.
+- Estado de navegación.
+- Cámara libre mientras se navega.
+
+### InventorySystem
+
+Controla:
+
+- Objetos recogidos.
+- Peso total.
+- Capacidad máxima.
+- Herramientas disponibles.
+- Barra rápida en el futuro.
+
+### WasteItem
+
+Representa un residuo recogible.
+
+Datos:
+
+- Nombre.
+- Tipo.
+- Peso.
+- Material reciclable.
+- Herramienta requerida.
+- Impacto ambiental.
+
+### WasteCollector
+
+Sistema encargado de recoger residuos y enviarlos al inventario.
+
+### RecyclingPoint
+
+Punto donde el jugador entrega residuos.
+
+Funciones:
+
+- Recibir basura.
+- Clasificar.
+- Convertir en materiales.
+- Reducir contaminación.
+- Actualizar salud ambiental.
+
+### EcoMaterialManager
+
+Controla materiales reciclados y recursos.
+
+No debe llamarse únicamente dinero.
+
+### EcosystemHealthManager
+
+Controla la salud global o local del ecosistema.
+
+Indicadores:
+
+- Agua.
+- Basura.
+- Fauna.
+- Flora.
+- Manglares.
+- Oxígeno.
+- Biodiversidad.
+- Contaminación.
+
+### PollutionZone
+
+Representa una zona contaminada.
+
+Cada zona tiene:
+
+- Nivel de basura.
+- Nivel de contaminación.
+- Estado visual.
+- Objetivos de restauración.
+- Lista de elementos activos o inactivos.
+
+### ZoneRestorationManager
+
+Activa cambios visuales según el progreso.
+
+Ejemplo:
+
+- Quitar basura.
+- Cambiar agua.
+- Activar plantas.
+- Activar fauna.
+- Cambiar sonidos.
+
+### MissionSystem
+
+Controla misiones.
+
+Debe permitir:
+
+- Iniciar misión.
+- Actualizar progreso.
+- Completar misión.
+- Dar recompensa.
+- Activar impacto ambiental.
+
+### NPCDialogueSystem
+
+Sistema simple de diálogo con NPC.
+
+Primera versión:
+
+- Texto por líneas.
+- Botón continuar.
+- Iniciar misión desde diálogo.
+
+### EnvironmentalMessageSystem
+
+Muestra mensajes educativos cortos.
+
+Ejemplo:
+
+- Al recoger plástico.
+- Al restaurar manglar.
+- Al medir agua.
+- Al rescatar animal.
+
+### UIManager
+
+Controla la interfaz:
+
+- Texto de interacción.
+- Inventario básico.
+- EcoPuntos/materiales.
+- Salud del ecosistema.
+- Misión actual.
+- Mensajes ambientales.
+
+---
+
+## 33. ScriptableObjects recomendados
+
+Usar ScriptableObjects para datos reutilizables.
+
+### WasteData
+
+Datos de cada residuo.
+
+Campos sugeridos:
+
+- Nombre
+- Descripción
+- Tipo
+- Peso
+- Volumen
+- Material generado
+- Cantidad generada
+- Herramienta requerida
+- Impacto de contaminación
+- Icono
+
+### ToolData
+
+Datos de herramientas.
+
+Campos sugeridos:
+
+- Nombre
+- Descripción
+- Tipo
+- Nivel
+- Usos permitidos
+- Icono
+
+### MissionData
+
+Datos de misión.
+
+Campos sugeridos:
+
+- Nombre
+- Descripción
+- NPC
+- Objetivos
+- Recompensas
+- Impacto ambiental
+- Mensaje educativo
+
+### EcosystemZoneData
+
+Datos de zona.
+
+Campos sugeridos:
+
+- Nombre de zona
+- Salud inicial
+- Contaminación inicial
+- Basura inicial
+- Calidad de agua inicial
+- Fauna inicial
+- Flora inicial
+- Manglar inicial
+- Umbrales de restauración
+
+---
+
+## 34. UI inicial
+
+La interfaz de la primera versión debe mostrar:
+
+- Punto blanco central.
+- Texto de interacción.
+- Misión actual.
+- Contador de basura o peso cargado.
+- Materiales obtenidos.
+- Barra de Salud del Ecosistema.
+- Mensajes educativos cortos.
+
+### Ejemplo visual conceptual
+
+```text
+[ Salud del Ecosistema: 18% ]
+
+Misión actual:
+Limpia el caño de Kiko
+
+Basura cargada:
+4 / 10 kg
+
+Materiales:
+Plástico reciclado: 0
+
+Centro:
+•
+Presiona E para recoger botella plástica
+```
+
+---
+
+## 35. Primera fase de desarrollo
+
+### Fase 1: Base jugable
+
+Objetivo:
+
+Crear la base mínima para caminar, mirar, interactuar y recoger basura.
+
+Tareas:
+
+- Crear proyecto Unity.
+- Crear escena Prototype_01_CanoDeKiko.
+- Crear PlayerController.
+- Crear cámara en primera persona.
+- Crear PlayerInteractor.
+- Crear interfaz IInteractable.
+- Crear objeto WasteItem básico.
+- Permitir recoger residuos con E.
+- Mostrar texto de interacción.
+- Mostrar inventario simple.
+
+---
+
+## 36. Segunda fase de desarrollo
+
+### Fase 2: Canoa
+
+Objetivo:
+
+Permitir navegar en una zona pequeña.
+
+Tareas:
+
+- Crear prefab de canoa.
+- Crear BoatController.
+- Permitir subir a la canoa con E.
+- Permitir bajar en zona válida.
+- Movimiento con WASD.
+- Mouse libre.
+- Crear agua básica.
+- Probar navegación en el caño.
+
+---
+
+## 37. Tercera fase de desarrollo
+
+### Fase 3: Reciclaje y materiales
+
+Objetivo:
+
+Permitir entregar basura y recibir materiales.
+
+Tareas:
+
+- Crear RecyclingPoint.
+- Permitir entregar basura.
+- Vaciar inventario parcial o total.
+- Convertir residuos en materiales.
+- Mostrar materiales en UI.
+- Reducir contaminación de la zona.
+
+---
+
+## 38. Cuarta fase de desarrollo
+
+### Fase 4: Salud ambiental
+
+Objetivo:
+
+Conectar acciones del jugador con la salud del ecosistema.
+
+Tareas:
+
+- Crear EcosystemHealthManager.
+- Crear PollutionZone.
+- Asociar residuos a una zona.
+- Reducir basura al recoger.
+- Reducir contaminación al reciclar.
+- Aumentar salud ambiental.
+- Mostrar barra de salud.
+
+---
+
+## 39. Quinta fase de desarrollo
+
+### Fase 5: Transformación visual
+
+Objetivo:
+
+Hacer que limpiar tenga recompensa visual.
+
+Tareas:
+
+- Cambiar color/material del agua.
+- Ocultar basura recogida.
+- Activar vegetación restaurada.
+- Activar aves o peces simples.
+- Activar sonidos naturales.
+- Mostrar mensaje de restauración.
+- Completar misión inicial.
+
+---
+
+## 40. Sexta fase de desarrollo
+
+### Fase 6: Kiko y misión inicial
+
+Objetivo:
+
+Agregar narrativa básica.
+
+Tareas:
+
+- Crear NPC Kiko.
+- Crear diálogo inicial.
+- Crear misión "El caño bloqueado".
+- Guiar al jugador al muelle.
+- Enseñar a subir a la canoa.
+- Enseñar a recoger basura.
+- Enseñar a reciclar.
+- Mostrar impacto final.
+
+---
+
+## 41. Tareas para Codex
+
+Estas son instrucciones directas para trabajar con Codex.
+
+### Prompt base para Codex
+
+```text
+Este proyecto es Guardianes de la Ciénaga, un juego 3D en Unity con C# sobre restauración ecológica de la Ciénaga Grande de Santa Marta.
+
+Ignora cualquier etapa anterior en TypeScript, Three.js o navegador. Esa ruta fue cancelada.
+
+El juego se inspira en la satisfacción de limpieza y restauración de juegos como Restore Your Island, pero su identidad propia es la Ciénaga Grande: canoas, manglares, pueblos, pesca, fauna, contaminación, educación ambiental y transformación visual del ecosistema.
+
+El primer prototipo debe llamarse "El caño de Kiko".
+
+Implementa una escena pequeña con:
+- Movimiento en primera persona estilo Minecraft.
+- Interacción mirando objetos y presionando E.
+- Canoa controlable con WASD y mouse libre.
+- Basura flotante recogible.
+- Inventario básico.
+- Punto de acopio/reciclaje.
+- Materiales reciclados.
+- Barra de Salud del Ecosistema.
+- Al limpiar suficiente basura, el agua debe verse más clara, aparecer vegetación o fauna simple y bajar la contaminación.
+
+No implementes sistemas avanzados todavía.
+Haz una base modular, limpia y fácil de ampliar.
+```
+
+### Primera tarea para Codex
+
+```text
+Lee proyecto_unity.md y crea la estructura inicial de carpetas dentro de Assets/_Project para Unity. No borres archivos existentes. Luego crea scripts base vacíos o mínimos para PlayerController, PlayerInteractor, IInteractable, WasteItem, InventorySystem, BoatController, RecyclingPoint, EcosystemHealthManager, PollutionZone, ZoneRestorationManager, MissionSystem y UIManager.
+```
+
+### Segunda tarea para Codex
+
+```text
+Implementa el movimiento en primera persona estilo Minecraft usando C#. Debe permitir WASD, mouse libre, salto, correr y agacharse. El script debe ser simple, comentado y fácil de modificar.
+```
+
+### Tercera tarea para Codex
+
+```text
+Implementa el sistema de interacción con Raycast desde la cámara. Si el jugador mira un objeto que implemente IInteractable y está dentro del rango, debe aparecer un texto de interacción. Al presionar E, debe ejecutarse la interacción.
+```
+
+### Cuarta tarea para Codex
+
+```text
+Crea un sistema simple de basura recogible. Un objeto WasteItem debe poder ser recogido con E, agregarse al inventario, desaparecer de la escena y actualizar la UI con el peso total cargado.
+```
+
+### Quinta tarea para Codex
+
+```text
+Crea una canoa controlable. El jugador debe poder mirar la canoa, presionar E para subir, moverse con WASD y mirar libremente con el mouse. También debe poder bajar en un punto válido presionando E.
+```
+
+### Sexta tarea para Codex
+
+```text
+Crea un punto de acopio/reciclaje. El jugador debe poder entregar la basura recogida, convertirla en materiales reciclados y reducir el nivel de contaminación de la zona.
+```
+
+### Séptima tarea para Codex
+
+```text
+Crea una barra de Salud del Ecosistema conectada al nivel de contaminación y basura recogida. Al limpiar la zona, la salud debe subir y la UI debe actualizarse.
+```
+
+### Octava tarea para Codex
+
+```text
+Crea un sistema simple de transformación visual. Cuando la salud del ecosistema supere cierto porcentaje, cambia el material del agua, activa vegetación nueva y activa algunos animales simples en la escena.
+```
+
+---
+
+## 42. Reglas para Codex
+
+Codex debe respetar estas reglas:
+
+1. No borrar archivos sin autorización.
+2. No cambiar el objetivo del juego.
+3. No usar TypeScript, Three.js ni Vite.
+4. No convertir el proyecto en juego web.
+5. No implementar sistemas demasiado complejos al principio.
+6. No crear arquitectura innecesariamente complicada.
+7. No usar dinero mágico como economía principal.
+8. Priorizar prototipo jugable sobre sistemas perfectos.
+9. Mantener scripts comentados.
+10. Mantener código modular.
+11. Crear prefabs simples cuando sea necesario.
+12. Preguntar antes de instalar paquetes externos.
+13. No tocar archivos de configuración delicados sin explicación.
+14. Mantener la identidad de la Ciénaga Grande.
+15. La transformación visual del ecosistema es prioridad.
+
+---
+
+## 43. Orden recomendado de implementación
+
+El orden recomendado es:
+
+```text
+1. Crear proyecto Unity limpio.
+2. Crear estructura de carpetas.
+3. Crear escena Prototype_01_CanoDeKiko.
+4. Crear PlayerController.
+5. Crear cámara en primera persona.
+6. Crear sistema de interacción.
+7. Crear basura recogible.
+8. Crear inventario simple.
+9. Crear UI básica.
+10. Crear canoa.
+11. Crear punto de acopio.
+12. Crear materiales reciclados.
+13. Crear salud del ecosistema.
+14. Crear transformación visual.
+15. Crear Kiko.
+16. Crear misión inicial.
+17. Pulir la experiencia.
+```
+
+---
+
+## 44. Vertical slice objetivo
+
+La primera demo debe poder mostrar esto:
+
+```text
+El jugador despierta o llega cerca de la casa de Kiko.
+Kiko le habla sobre el caño contaminado.
+El jugador camina al muelle.
+Sube a la canoa.
+Navega hasta una zona llena de basura.
+Recoge residuos flotantes.
+Vuelve al punto de acopio.
+Entrega los residuos.
+La contaminación baja.
+La salud del ecosistema sube.
+El agua se ve más clara.
+Aparecen algunos peces o aves.
+Kiko reconoce el cambio.
+El jugador entiende que la Ciénaga puede recuperarse.
+```
+
+Si esta demo funciona, el corazón del juego ya existe.
+
+---
+
+## 45. Cosas que NO deben hacerse todavía
+
+Para evitar perder tiempo, no hacer al inicio:
+
+- Mapa gigante completo.
+- Multijugador.
+- Sistema avanzado de construcción.
+- IA compleja de animales.
+- Clima realista.
+- Ciclo día/noche avanzado.
+- Inventario tipo Minecraft completo.
+- Tienda compleja.
+- Árbol de habilidades enorme.
+- Cinemáticas avanzadas.
+- Mundo abierto enorme.
+- Optimización prematura.
+- Demasiados NPC.
+- Demasiadas herramientas.
+
+Primero debe existir una experiencia pequeña, clara y jugable.
+
+---
+
+## 46. Prioridades del proyecto
+
+### Prioridad 1
+
+Que el jugador pueda sentir:
+
+> "Estoy limpiando y la Ciénaga está cambiando."
+
+### Prioridad 2
+
+Que el juego sea fácil de jugar:
+
+- Controles simples.
+- Interacción clara.
+- Objetivos entendibles.
+- UI limpia.
+
+### Prioridad 3
+
+Que el mundo tenga identidad:
+
+- Canoa.
+- Manglares.
+- Agua.
+- Pescadores.
+- Fauna.
+- Pueblo.
+- Ciénaga Grande.
+
+### Prioridad 4
+
+Que la educación ambiental esté integrada:
+
+- Mensajes cortos.
+- Misiones con contexto.
+- Especies reales.
+- Problemas reales.
+
+---
+
+## 47. Visión final del proyecto
+
+La meta no es crear simplemente un juego sobre recoger basura.
+
+Es crear el primer videojuego donde el jugador experimente cómo funciona la restauración de un humedal real.
+
+Cada acción tiene un impacto visible:
+
+- El agua recupera su transparencia.
+- Regresan los peces.
+- Vuelven las aves.
+- Los manglares crecen.
+- La comunidad cambia.
+- El ecosistema respira otra vez.
+
+La satisfacción del jugador no proviene únicamente de completar misiones, sino de mirar atrás y darse cuenta de que un lugar que estaba muriendo ahora vuelve a estar lleno de vida.
+
+Esa transformación del mundo es el verdadero protagonista de **Guardianes de la Ciénaga**.
+
+---
+
+## 48. Resumen corto para el README
+
+Este texto puede usarse también en el README principal:
+
+```text
+Guardianes de la Ciénaga es un juego 3D desarrollado en Unity sobre restauración ecológica de la Ciénaga Grande de Santa Marta.
+
+El jugador regresa a su pueblo después de enterarse de que la Ciénaga podría colapsar ecológicamente. Guiado por su abuelo Kiko, deberá limpiar residuos, restaurar manglares, rescatar fauna, investigar la contaminación, educar a la comunidad y devolverle vida al ecosistema.
+
+El juego combina exploración en primera persona, navegación en canoa, recolección y clasificación de basura, progresión por herramientas, salud ambiental, transformación visual del mundo y educación ecológica integrada al gameplay.
+
+No se trata solo de recoger basura.
+Se trata de ver cómo un ecosistema enfermo puede volver a respirar.
+```
+
+---
+
+## 49. Mensaje final para el equipo o para Codex
+
+```text
+Guardianes de la Ciénaga debe desarrollarse directamente en Unity 3D con C#.
+
+El archivo proyecto_unity.md es el documento maestro del proyecto.
+
+El objetivo inicial es construir una vertical slice llamada "El caño de Kiko", donde se pueda experimentar el ciclo principal: caminar, navegar en canoa, recoger basura, reciclar, mejorar la salud del ecosistema y ver una transformación visual del entorno.
+
+La etapa de TypeScript, Three.js y navegador queda cancelada como ruta principal.
+
+La prioridad no es crear un mundo enorme desde el inicio.
+La prioridad es demostrar que limpiar y restaurar la Ciénaga se siente bien, se entiende fácil y genera un cambio visible en el mundo.
+```
